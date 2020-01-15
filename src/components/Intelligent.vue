@@ -1,12 +1,12 @@
 <template>
-    <div>Mine</div>
+    <div>Intelligent</div>
 </template>
 
 <script>
     export default {
-        name: "Mine",
+        name: "Intelligent",
         data() {
-          return {}
+            return {}
         },
         components: {},
         computed: {},

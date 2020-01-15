@@ -1,0 +1,27 @@
+[
+  {
+    "nav_urls": "/phone",
+    "nav_img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5b0d18a3033b43c0645b78dfc9d759a9.png?thumb=1&w=120&h=120",
+    "nav_title": "手机"
+  },
+  {
+    "nav_urls": "/tv",
+    "nav_img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2ea4dd3a0a93e66cffa63dbb6aae34a1.png?thumb=1&w=120&h=120",
+    "nav_title": "电视"
+  },
+  {
+    "nav_urls": "/computer",
+    "nav_img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a05e4ac5c3bdcb4e56ed9fcc79ed6d8.png?thumb=1&w=120&h=120",
+    "nav_title": "电脑"
+  },
+  {
+    "nav_urls": "/intelligent",
+    "nav_img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/324a26ffc76926061938094f9fb88b11.png?thumb=1&w=120&h=120",
+    "nav_title": "智能"
+  },
+  {
+    "nav_urls": "/news",
+    "nav_img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ea816771c7470bec72a893dd0bfccee9.png?thumb=1&w=120&h=120",
+    "nav_title": "新品"
+  }
+]

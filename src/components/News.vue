@@ -1,12 +1,12 @@
 <template>
-    <div>Mine</div>
+    <div>News</div>
 </template>
 
 <script>
     export default {
-        name: "Mine",
+        name: "News",
         data() {
-          return {}
+            return {}
         },
         components: {},
         computed: {},

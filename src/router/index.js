@@ -19,25 +19,46 @@ export default new Router({
       path: '/type',
       name: 'Type',
       component: () => import('../components/Type'),//动态加载的方法
-      meta: {keepAlive: true}
     },
     {
       path: '/find',
       name: 'Find',
       component: () => import('../components/Find'),//动态加载的方法
-      meta: {keepAlive: true}
     },
     {
       path: '/shopcar',
       name: 'ShopCar',
       component: () => import('../components/ShopCar'),//动态加载的方法
-      meta: {keepAlive: true}
     },
     {
       path: '/mine',
       name: 'Mine',
       component: () => import('../components/Mine'),//动态加载的方法
-      meta: {keepAlive: true}
     },
+    {
+      path: '/phone',
+      name: 'Phone',
+      component: () => import('../components/Phone'),//动态加载的方法
+    },
+    {
+      path: '/tv',
+      name: 'Tv',
+      component: () => import('../components/Tv'),//动态加载的方法
+    },
+    {
+      path: '/computer',
+      name: 'Computer',
+      component: () => import('../components/Computer'),//动态加载的方法
+    },
+    {
+      path: '/intelligent',
+      name: 'Intelligent',
+      component: () => import('../components/Intelligent'),//动态加载的方法
+    },
+    {
+      path: '/news',
+      name: 'News',
+      component: () => import('../components/News'),//动态加载的方法
+    }
   ]
 })

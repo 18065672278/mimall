@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>Find</div>
 </template>
 
 <script>

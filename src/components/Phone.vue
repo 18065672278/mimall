@@ -1,14 +1,20 @@
 <template>
-  <div>ShopCar</div>
+  <div>
+    <MHeader back=true>手机频道</MHeader>
+  </div>
 </template>
 
 <script>
+  import MHeader from "../base/MHeader";
+
   export default {
-    name: "ShopCar",
+    name: "Phone",
     data() {
       return {}
     },
-    components: {},
+    components: {
+      MHeader
+    },
     computed: {},
     methods: {}
   }
