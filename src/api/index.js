@@ -20,3 +20,6 @@ export let getIndexBlock = () => {
 export let getAll = () => {
   return axios.all([getSliders(),getNavs(),getIndexBlock()])
 }
+export let getGoodsDetail = (id) =>{
+  return axios.get(`/goodsDetail?id=${id}`)
+}

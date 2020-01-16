@@ -56,9 +56,9 @@ export default new Router({
       component: () => import('../components/Intelligent'),//动态加载的方法
     },
     {
-      path: '/news',
-      name: 'News',
-      component: () => import('../components/News'),//动态加载的方法
+      path: '/goods/:pid',
+      name: 'Goods',
+      component: () => import('../components/Goods'),//动态加载的方法
     }
   ]
 })

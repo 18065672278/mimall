@@ -39,4 +39,15 @@ http.createServer((req, res) => {
       res.end(JSON.stringify(indexBlock))
     })
   }
+  if (pathname === '/goodsDetail') {
+    let id = parseInt(query.id);
+    console.log(id);
+    read('./goodsDetail.json',function (goodsDetails) {
+      res.setHeader('Content-Type', 'application/json;charset=utf8');
+      let goodsDetail = goodsDetails.filter((item)=>{
+        return id == item.id
+      })
+      res.end(JSON.stringify(goodsDetail))
+    })
+  }
 }).listen(3000);

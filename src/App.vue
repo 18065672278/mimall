@@ -25,7 +25,7 @@
   }
 </script>
 
-<style>
+<style lang="less">
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -72,6 +72,19 @@
     bottom: 50px;
     overflow: auto;
     background: #ebebeb;
+  }
+
+  .noTab {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    .content {
+      bottom: 0px;
+    }
   }
 
   /*切换页面动画 start*/

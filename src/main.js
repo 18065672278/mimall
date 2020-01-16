@@ -16,6 +16,11 @@ Vue.use(VueLazyload, {
   loading: 'http://suo.im/5BQrBu',
   attempt: 1
 })
+
+Vue.prototype.$goRouter = function(index){
+  this.$router.push(index);
+}
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

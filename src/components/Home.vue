@@ -7,7 +7,7 @@
         <div class="section searchBar">
           <div class="section searBar-box">
             <img src="@/assets/icons/search.png" mode="aspectFill" class="search-icon"/>
-            <input type="text" name="searchBar" disabled="true" placeholder="搜索商品" placeholder-class="search-plac"/>
+            <input type="text" name="searchBar" disabled="true" placeholder="搜索商品"/>
           </div>
         </div>
         <Swiper :swiperSlides="sliders"></Swiper>
@@ -25,13 +25,12 @@
         <div class="section block">
           <template v-for="(item,index) in indexBlock">
             <div class="section cover">
-              <img class="cover-img" :src="item.img_url" :data-cid="item.id"/>
+              <img class="cover-img" :src="item.img_url" @click="$goRouter('/goods/'+item.id)" :id="item.id"/>
             </div>
             <div class="section goods-list">
               <template v-for="(product,index) in item.section">
-                <div class="goods-item">
-                  <img class="goods-img" :class="product.is_new?'new':product.on_sale?'on-sale':''"
-                       :src="product.goods_cover" :data-pid="product.id"/>
+                <div class="goods-item" :class="product.is_new?'new':product.on_sale?'on-sale':''">
+                  <img class="goods-img" :src="product.goods_cover" @click="$goRouter('/goods/'+product.id)"/>
                   <div class="title">{{product.header}}</div>
                   <div class="desp">{{product.description}}</div>
                   <div class="meta">{{product.meta}}</div>
@@ -77,7 +76,7 @@
         this.navs = navs;
         this.indexBlock = indexBlock;
         this.loading = false;
-      }
+      },
     }
   }
 </script>
@@ -189,12 +188,42 @@
       .goods-item {
         width: 180px;
         margin-bottom: 15px;
+        position: relative;
 
         .goods-img {
-          position: relative;
           width: 180px;
           height: 180px;
           box-shadow: 0 0 3px #dcdcdc;
+        }
+
+        &.on-sale:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 50px;
+          height: 20px;
+          line-height: 20px;
+          content: "满减";
+          font-size: 9pt;
+          color: #fff;
+          text-align: center;
+          background: #ec6055;
+          z-index: 100;
+        }
+
+        &.new:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 50px;
+          height: 20px;
+          line-height: 20px;
+          content: "新品";
+          color: #fff;
+          font-size: 9pt;
+          text-align: center;
+          background: #8CC64A;
+          z-index: 100;
         }
 
         div {
@@ -254,6 +283,7 @@
     height: 50px;
     justify-content: center;
     align-items: center;
+
     div {
       font-size: 10pt;
       color: #666;
