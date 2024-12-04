@@ -1,6 +1,5 @@
 # mimall
-feature1
-feature3
+feature2
 > A Vue.js project
 
 ## Build Setup
